@@ -5,4 +5,4 @@ The increase in popularity of social media was also followed by an increase in h
 ## Methodology
 Firstly, we tokenize each word in the text, and similarly, we ensure that each token corresponds to one rationale. Next, we embed the text and embed the rationale in a similar manner, ensuring that we set [PAD] tokens to 0 in the rationale embeddings to avoid duplication of embedding. Next, we mask random token rationales. Finally, we construct an BERT-MRP model, by adding an MLP layer on top of bert. We train the model with BCE loss only on the masked tokens.
 
-![Methodology Diagram](Methods.jpg)
+![Methodology Diagram](Methods.PNG)
